@@ -1,0 +1,61 @@
+/*RESPONSIVE:*/
+
+/* vista tablet*/
+/*768px hasta 1023px*/
+
+/*pagina de inicio*/
+@media(max-width:1023px) {
+
+    /*HEADER*/
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .encabezado .botonHeader {
+        display: none;
+    }
+
+    /*BANNER*/
+
+    .bannerContenido h1 {
+        font-size: 2.5rem;
+    }
+
+    .bannerContenido p {
+        font-size: 1.8rem;
+    }
+
+    /*Anuncios*/
+    .gridPadre {
+        margin: 2vh;
+        font-size: 1rem;
+        align-items: center;
+    }
+
+    .gridPadre h2,
+    .gridPadre p {
+        font-size: inherit;
+    }
+
+    .imgAnuncios {
+        height: 250px;
+        width: 160px;
+
+    }
+
+}
+
+/*responsive*/
+
+/*vista movil */
+/*0 hasta 768*/
+
+@media(max-width:768) {
+
+    .gridPadre {
+        grid-template-columns: 1fr;
+    }
+
+}
